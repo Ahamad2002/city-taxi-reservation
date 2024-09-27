@@ -1,0 +1,53 @@
+.city-taxi-navbar {
+    background-color: #000000; /* Light gray for a clean background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc00; /* Yellow color for the taxi brand */
+  }
+  
+  /* Button styles */
+  .navbar-nav .btn {
+    font-size: 1rem;
+    padding: 5px 15px;
+  }
+  
+  /* Login button */
+  .login-btn {
+    color: #020202;
+    border-color: #ffcc00;
+  }
+  
+  .login-btn:hover {
+    background-color: #ffcc00;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Signup button */
+  .signup-btn {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+    color: black;
+  }
+  
+  .signup-btn:hover {
+    background-color: #e6b800;
+    color: white;
+  }
+  

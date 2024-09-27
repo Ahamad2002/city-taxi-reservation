@@ -1,0 +1,155 @@
+
+.login-page {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* Black background for the entire page */
+    color: #fff; /* Ensuring text contrast */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.login-page .login-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 300px; 
+    
+}
+
+.login-page .login-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the area nicely */
+}
+
+.login-page .login-form {
+    width: 100%;
+    max-width: 360px;
+    padding: 20px;
+    background-color: #fff; /* White background for form contrast */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    margin: 20px;
+   
+}
+
+.login-page .login-logo {
+    text-align: center;
+}
+
+.login-page .login-logo img {
+    width: 100px;
+    margin-bottom: 1px;
+}
+
+.login-page .login-logo h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+}
+
+.login-page form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-page label {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.login-page input[type="text"],
+.login-page input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #000;
+    width: auto;
+}
+
+.login-page .additional-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.login-page .additional-options a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login-page .additional-options a:hover {
+    text-decoration: underline;
+}
+
+.login-page button {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.login-page .login-btn {
+    background-color: #FFD700;
+    color: #000;
+    font-weight: bold;
+}
+
+.login-page .login-btn:hover {
+    background-color: #FFC107;
+    transform: scale(1.05);
+    color: #fffdfd;
+    font-weight: bold;
+}
+
+.login-page .gmail-login-btn {
+    background-color: #DD4B39;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.login-page .gmail-login-btn img {
+    margin-right: 8px;
+    width: 32px;
+}
+
+.login-page .gmail-login-btn:hover {
+    background-color: #C23321;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .login-page {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+
+    .login-page .login-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10%;
+    }
+
+    .login-page .login-form {
+        margin: 10px auto;
+        width: 90%;
+    }
+}

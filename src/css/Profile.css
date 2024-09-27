@@ -1,0 +1,173 @@
+/* Profile.css */
+
+.profile-page {
+  background-color: #fff3b2; /* Light yellow background similar to BookRide */
+  padding: 20px;
+  min-height: 100vh; /* Ensure the page covers the full height */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.profile-container {
+  max-width: 800px; /* Set a fixed max-width for better layout */
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: slideIn 0.5s ease-out;
+}
+
+/* Slide-in animation keyframes */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic img,
+.profile-pic .placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-pic img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic img:hover {
+  transform: scale(1.1);
+}
+
+.placeholder {
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+  font-size: 1.2rem;
+}
+
+.image-upload input[type="file"] {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-edit-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-edit-container input,
+.input-edit-container textarea,
+.input-edit-container select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.input-edit-container input[disabled],
+.input-edit-container textarea[disabled],
+.input-edit-container select[disabled] {
+  background-color: #f9f9f9;
+}
+
+.input-edit-container input:focus,
+.input-edit-container textarea:focus,
+.input-edit-container select:focus {
+  border-color: #ff6600;
+  outline: none;
+}
+
+.edit-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.edit-icon:hover {
+  color: #ffcc00;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+.update-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  background: linear-gradient(45deg, #ffcc00, #ff3300);
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 51, 0, 0.3);
+}
+
+.update-btn:hover {
+  transform: scale(1.05);
+  background-color: #ffb900;
+  box-shadow: 0 6px 15px rgba(255, 51, 0, 0.4);
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 15px;
+  }
+
+  .input-edit-container input,
+  .input-edit-container textarea,
+  .input-edit-container select {
+    padding: 10px;
+  }
+
+  .edit-icon {
+    right: 5px;
+  }
+}

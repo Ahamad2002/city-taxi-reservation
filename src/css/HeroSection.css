@@ -1,0 +1,99 @@
+.hero-section {
+    background: url('/public/images/Background.jpg') no-repeat center center;
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    max-width: auto;
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .hero-content {
+    text-align: center;
+    max-width: 900px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay for better readability */
+    border-radius: 10px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Enhanced button styles */
+  .hero-buttons .btn {
+    margin: 0 10px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 20px; /* Rounded corners for buttons */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  .hero-buttons .btn-primary {
+    background-color: #ff0000; /* Bright red for primary button */
+    border-color: #ff0000;
+    color: white;
+  }
+  
+  .hero-buttons .btn-primary:hover {
+    background-color: #cc0000; /* Slightly darker red on hover */
+    color: white;
+  }
+  
+  .hero-buttons .btn-outline-primary {
+    color: #ffcc00;
+    border-color: #ffcc00;
+    background: transparent;
+  }
+  
+  .hero-buttons .btn-outline-primary:hover {
+    background-color: #ffcc00;
+    color: black;
+  }
+/* Keyframe animations for buttons */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .hero-buttons .btn {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+ 
+  /* Stagger animations on hover */
+  .hero-buttons .btn:hover {
+    animation: jello 0.9s ease;
+  }
+  
+  @keyframes jello {
+    0%, to {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  }
+    

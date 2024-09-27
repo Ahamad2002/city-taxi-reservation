@@ -1,0 +1,55 @@
+.view-bookings {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #fff3b2;
+    padding: 20px;
+    max-width: auto;
+    margin: 0 auto;
+    border-radius: 20px; /* Rounded corners for modern look */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .view-bookings  h1 {
+    text-align: center;
+    color: #070707; /* Dark blue for headings */
+    margin-bottom: 20px;
+  }
+  
+  .view-bookings p {
+    text-align: center;
+    color: #666; /* Grey for subtle info text */
+    margin-bottom: 30px;
+  }
+  
+  .bookings-table {
+    overflow-x: auto;
+  }
+  
+  .bookings-table table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders between cells are shared */
+  }
+  
+  .bookings-table th, .bookings-table td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #eee; /* Light grey border for subtle separation */
+  }
+  
+  .bookings-table th {
+    background-color: #ffd700; /* Blue background for header */
+    color: white;
+    border-radius: 10px 10px 0 0; /* Rounded corners on the top of header */
+    font-size: 16px;
+  }
+  
+  .bookings-table td {
+    background-color: #f9f9f9; /* Very light grey background for rows */
+    color: #333; /* Dark grey for text */
+  }
+  
+  @media (max-width: 768px) {
+    .bookings-table th, .bookings-table td {
+      padding: 12px; /* Smaller padding for smaller screens */
+    }
+  }
+  

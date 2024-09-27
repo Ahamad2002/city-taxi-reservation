@@ -1,0 +1,27 @@
+/* Arrow button to scroll down */
+.scroll-arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #FFCC00;
+  color: #000;
+  border: none;
+  border-radius: 30%; /* Make it a perfect circle */
+  padding: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.scroll-arrow:hover {
+  background-color: #e6b800; /* Darker yellow */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .scroll-arrow {
+      font-size: 18px;
+      padding: 10px;
+  }
+}

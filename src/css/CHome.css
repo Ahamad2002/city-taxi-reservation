@@ -1,0 +1,182 @@
+.customer-home {
+    font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+    max-width: 100%; /* Set a max-width to limit the content's width */
+    margin: 0 auto;
+    background-color: #fff3b2;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .customer-home h1 {
+    color: #333;
+    font-size: 2.5rem; /* Responsive font size */
+    margin-bottom: 20px;
+  }
+  
+  .overview-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 20px;
+  }
+  
+  .total-rides, .canceled-rides, .monthly-overview {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    min-width: 250px; /* Minimum width to ensure they look good on small screens */
+  }
+  
+  .ride-info h2 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2rem;
+  }
+  
+  .ride-info p {
+    font-size: 2rem;
+    color: #ff3300;
+    margin: 0;
+  }
+  
+  .canceled-rides .ride-info p {
+    color: #cc0000; /* Red for canceled rides */
+  }
+  
+  /* Flex container for both charts */
+  .chart-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures charts stack on small screens */
+    margin-top: 40px;
+  }
+  
+  /* Bar chart container */
+  .chart-container {
+    width: 100%;
+    max-width: 600px;
+    flex: 1;
+  }
+  
+  /* Pie chart container */
+  .pie-chart-container {
+    width: 100%;
+    max-width: 400px; /* Increased the width for balance */
+    flex: 1;
+  }
+  
+  #barChart {
+    width: 100%;
+    height: 450px;
+  }
+  
+  #pieChart {
+    width: 100%;
+    height: 350px;
+  }
+  
+  .bar {
+    transition: fill 0.3s ease;
+  }
+  
+  .bar:hover {
+    fill: #ff3300; /* Highlight bars on hover */
+  }
+  
+  .x-axis text {
+    font-size: 12px;
+    fill: #333;
+  }
+  
+  .y-axis text {
+    font-size: 12px;
+    fill: #333;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .customer-home h1 {
+      font-size: 2rem;
+    }
+    
+    .ride-info h2 {
+      font-size: 1rem;
+    }
+  
+    .ride-info p {
+      font-size: 1.8rem;
+    }
+  
+    #barChart {
+      height: 400px; /* Reduce height for mid-sized screens */
+    }
+  
+    #pieChart {
+      height: 300px; /* Reduce height for mid-sized screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .chart-section {
+      flex-direction: column; /* Stack charts vertically on smaller screens */
+    }
+  
+    .chart-container, .pie-chart-container {
+      max-width: 100%; /* Take full width on smaller screens */
+    }
+  
+    .customer-home h1 {
+      font-size: 1.8rem; /* Adjust title size for smaller screens */
+    }
+  
+    .ride-info h2 {
+      font-size: 1rem;
+    }
+  
+    .ride-info p {
+      font-size: 1.6rem; /* Slightly reduce the paragraph size */
+    }
+  
+    #barChart {
+      height: 500px; /* Adjust chart size for mobile devices */
+    }
+  
+    #pieChart {
+      height: 400px; /* Adjust chart size for mobile devices */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ride-info p {
+      font-size: 1.4rem; /* Reduce paragraph size further for small screens */
+    }
+  
+    .total-rides, .canceled-rides, .monthly-overview {
+      padding: 15px; /* Reduce padding for mobile */
+    }
+  
+    .ride-info h2 {
+      font-size: 0.9rem; /* Adjust headers for smaller devices */
+    }
+  }
+  

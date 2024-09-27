@@ -1,0 +1,120 @@
+.manage-drivers {
+    font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+    max-width: auto;
+    margin: 0 auto;
+    background-color:  #fff3b2;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out; /* Animation on load */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .manage-drivers h1 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .manage-drivers .booking {
+    background-color: #fffbe6;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: left;
+    border: 2px solid #ffcc00;
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .booking p {
+    margin: 5px 0;
+  }
+  
+  .driver-list {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 15px;
+    animation: fadeInUp 0.7s ease-in-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .driver {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #eef5ff;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .driver:hover {
+    transform: scale(1.02);
+  }
+  
+  .driver p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .manage-drivers  button {
+    background: linear-gradient(45deg, #ffcc00, #ff3300);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 51, 0, 0.3);
+  }
+  
+  .manage-drivers button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 51, 0, 0.4);
+  }
+  
+  .confirmation-message {
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  

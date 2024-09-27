@@ -1,0 +1,104 @@
+/* Scoped styles for the ViewRatings component */
+.ratings-page {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #fff3b2;
+    padding: 20px;
+    max-width: auto;
+    margin: 0 auto;
+    
+}
+
+.ratings-page h2 {
+    text-align: center;
+    color: #0e0d0d;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.ratings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Card style for each rating */
+.rating-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Rating card header with username and stars */
+.rating-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating-header h4 {
+    font-size: 2rem;
+    color: #cc0000;
+    margin: 0;
+}
+
+/* Styling for the stars */
+.rating-stars {
+    font-size: 2rem;
+    display: inline-block;
+    color: #ffd700; /* Gold color for filled stars */
+}
+
+.rating-stars .filled {
+    color: #ffd700; /* Filled stars */
+}
+
+.rating-stars .empty {
+    color: #e0e0e0; /* Empty stars (gray) */
+    /* Alternatively, you can hide empty stars by changing color to transparent or applying display: none */
+}
+
+.rating-date {
+    font-size: 1.5rem;
+    color: #242323;
+}
+
+/* Content for feedback */
+.rating-content {
+    margin-top: 10px;
+}
+
+.rating-content p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.load-more-btn {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    color: rgb(5, 5, 5);
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+}
+
+.load-more-btn:hover {
+    background-color: #ffb900; /* Slightly darker on hover for feedback */
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}

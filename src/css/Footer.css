@@ -1,0 +1,54 @@
+.footer {
+    background-color: #070707; /* Dark background for the footer */
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer-section {
+    flex: 1 1 200px; /* Ensure flexibility but not smaller than 200px */
+    margin-right: 20px;
+}
+
+.footer-section h4 {
+    color: #FFCC00; /* Yellow color for section headings */
+}
+
+.footer-section ul, .footer-section p {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a, .footer-section ul li {
+    color: #fff; /* White text color for readability */
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 16px; /* Adjust the font size for icons */
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}

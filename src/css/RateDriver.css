@@ -1,0 +1,161 @@
+.rate-driver {
+    font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+    max-width: auto;
+    margin: 0 auto;
+    background-color: #fff3b2;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out; /* Animation on load */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .rate-driver h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .rate-driver .ride-details {
+    background-color: #eef5ff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: left;
+    border: 2px solid #ffcc00;
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .ride-details p {
+    margin: 5px 0;
+  }
+  
+  .rate-driver .add-feedback-btn {
+    width:30%;
+    background: linear-gradient(45deg, #ffcc00, #ff3300);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 51, 0, 0.3);
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    
+   
+  }
+  
+  .rate-driver .add-feedback-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 51, 0, 0.4);
+  }
+  
+  .feedback-form {
+    background-color: #fffbe6;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+    animation: fadeInUp 0.7s ease-in-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .feedback-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .feedback-form textarea {
+    width: 90%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    font-size: 14px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .feedback-form textarea:focus {
+    border-color: #ff6600;
+    outline: none;
+  }
+  
+  /* Star rating styles */
+  .star-rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .star-rating span {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .star-rating .on {
+    color: #ffcc00; /* Yellow stars */
+  }
+  
+  .star-rating .off {
+    color: #ccc; /* Gray stars */
+  }
+  
+  .rate-driver .submit-btn {
+    width: 30%;
+    background: linear-gradient(45deg, #ff3300, #ffcc00);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 51, 0, 0.3);
+    margin-top: 15px;
+  }
+  
+  .rate-driver .submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 51, 0, 0.4);
+  }
+  

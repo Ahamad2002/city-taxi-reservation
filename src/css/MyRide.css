@@ -1,0 +1,192 @@
+.my-ride-page {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #fff3b2;
+    padding: 20px;
+}
+
+/* Headings */
+.my-ride-page h2, .my-ride-page h3 {
+    font-size: 2.5rem;
+    color: #080808;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Error Message */
+.my-ride-page .error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Map Container */
+.my-ride-page .map-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+.my-ride-page button {
+    display: block;
+    width: auto;
+    padding: 12px 25px;
+    margin: 20px auto;
+    background-color: #ffcc00;
+    color: #050505;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.my-ride-page button:hover {
+    background-color: #ffb900;
+    color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.my-ride-page button:active {
+    background-color: #990000;
+    box-shadow: none;
+}
+
+/* Text Styling */
+.my-ride-page p {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.my-ride-page p.status {
+    font-weight: bold;
+    color: #929292;
+}
+
+.my-ride-page p.location {
+    color: #cc0000;
+    font-weight: bold;
+}
+
+/* Booking Section and Ride History */
+.booking-section, .history-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.booking-table, .history-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.booking-table th, .history-table th,
+.booking-table td, .history-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.booking-table th, .history-table th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+    color: #555;
+}
+
+.booking-table td, .history-table td {
+    background-color: #fafafa;
+}
+
+/* Curved Table Edges */
+.booking-table th:first-child, .booking-table td:first-child,
+.history-table th:first-child, .history-table td:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.booking-table th:last-child, .booking-table td:last-child,
+.history-table th:last-child, .history-table td:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+/* Buttons in Table */
+.my-ride-page-cancel-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-btn:hover {
+    background-color: #e60000;
+}
+
+.confirm-btn:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .my-ride-page .map-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .my-ride-page button {
+        width: 170px;
+        padding: 10px 15px;
+    }
+
+    .my-ride-page h2, .my-ride-page h3 {
+        font-size: 2rem;
+    }
+
+    .booking-table th, .history-table th,
+    .booking-table td, .history-table td {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .my-ride-page button {
+        width: 150px;
+        padding: 8px 12px;
+    }
+
+    .my-ride-page h2, .my-ride-page h3 {
+        font-size: 1.8rem;
+    }
+
+    .booking-table th, .history-table th,
+    .booking-table td, .history-table td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,76 @@
+.services-section {
+    background-color: #ffffff; /* Black background */
+    /* White text */
+    padding: 50px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .service-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    color: #000000;
+  }
+  
+  .service-highlight {
+    width: 50px;
+    height: 5px;
+    background-color: #FFC107; /* Yellow highlight */
+    margin-right: 10px;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    color: #ffffff;
+  }
+  
+  .service-card {
+    width: 30%;
+    background-color: #1a1a1a; /* Slightly lighter black for card */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px); /* Subtle lift effect on hover */
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .read-more-btn {
+    background-color: #FFC107; /* Yellow button */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #e6b800; /* Darker yellow */
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .service-cards {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .service-card {
+      width: 80%;
+      margin: 0 auto; /* Center cards on smaller screens */
+    }
+  }
+  
