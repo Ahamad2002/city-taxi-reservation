@@ -1,0 +1,311 @@
+.book-ride {
+  font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 20px;
+  max-width: auto;
+  margin: 0 auto;
+  background-color: #fff3b2; /* Light yellow background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out; /* Animation on load */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.book-ride h2 {
+  text-align: center;
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.book-ride .booking-form {
+  margin-top: 20px;
+}
+
+.book-ride .location-input input {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease-in-out;
+  align-items: center;
+}
+
+.book-ride .location-input input:focus {
+  border-color: #ff6600;
+  outline: none;
+}
+
+.book-ride .map-container {
+  margin: 20px 0;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #ffcc00;
+}
+
+.book-ride .driver-info {
+  background-color: #ffefd5;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+  text-align: center;
+  border: 2px solid #ffcc00;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.book-ride .fare-details {
+  background-color: #ffef99;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  border: 2px solid #ffcc00;
+  animation: slideIn 0.6s ease-in-out;
+}
+
+.book-ride .confirm-btn {
+  width: 100%;
+  background: linear-gradient(45deg, #ffcc00, #ff3300);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 51, 0, 0.3);
+}
+
+.book-ride .confirm-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 51, 0, 0.4);
+}
+
+/* Payment Modal Styles */
+.book-ride .payment-options {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.book-ride .payment-modal {
+  background-color: #fdf5e6;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  animation: fadeInUp 0.7s ease-in-out;
+  position: relative;
+}
+
+.book-ride .payment-modal h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.book-ride .payment-modal select,
+.book-ride .payment-modal input {
+  width: 95%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.book-ride .payment-modal select:focus,
+.book-ride .payment-modal input:focus {
+  border-color: #ff6600;
+  outline: none;
+}
+
+.book-ride .payment-modal .pay-btn {
+  width: 100%;
+  background: linear-gradient(45deg, #ff3300, #ffcc00);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 51, 0, 0.3);
+}
+
+.book-ride .payment-modal .pay-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 51, 0, 0.4);
+}
+
+.book-ride .payment-modal .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Ride Confirmation Styles */
+.book-ride .ride-confirmation {
+  background-color: #ffef99;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid #ffcc00;
+  animation: slideIn 0.6s ease-in-out;
+}
+
+.book-ride .payment-btn {
+  width: 100%;
+  background: linear-gradient(45deg, #ff3300, #ffcc00);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 51, 0, 0.3);
+}
+
+.book-ride .payment-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 51, 0, 0.4);
+}
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.ride-history-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.ride-history-btn img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.ride-history-btn:hover {
+  color: #ff6600;
+}
+
+/* Ride History Modal Styles */
+.ride-history-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.ride-history-content {
+  background-color: #fff3b2;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  animation: fadeInUp 0.7s ease-in-out;
+}
+
+.ride-history-content h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.ride-history-content ul {
+  list-style-type: none;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.ride-history-content li {
+  background-color: #ffef99;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ffcc00;
+}
+
+.ride-history-content li p {
+  margin: 5px 0;
+}
+
+.ride-history-content .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}

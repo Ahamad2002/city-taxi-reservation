@@ -1,0 +1,118 @@
+.admin-home {
+    font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+    max-width: auto;
+    margin: 0 auto;
+    background-color: #fff3b2;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .admin-home h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .overview-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+  
+  .overview-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .info h2 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2rem;
+  }
+  
+  .info p {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .total-users .info p {
+    color: #007bff;
+  }
+  
+  .total-drivers .info p {
+    color: #28a745;
+  }
+  
+  .total-bookings .info p {
+    color: #ffc107;
+  }
+  
+  .total-revenue .info p {
+    color: #28a745;
+  }
+  
+  /* Flex container for the bar and pie chart */
+  .chart-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  
+  .chart-container, .pie-chart-container {
+    flex: 1;
+  }
+  
+  .chart-container {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .pie-chart-container {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  #revenueBarChart {
+    width: 100%;
+    height: 450px;
+  }
+  
+  #bookingsPieChart {
+    width: 100%;
+    height: 350px;
+  }
+  
+  @media (max-width: 768px) {
+    .chart-section {
+      flex-direction: column;
+    }
+  
+    .chart-container, .pie-chart-container {
+      max-width: 100%;
+    }
+  }
+  

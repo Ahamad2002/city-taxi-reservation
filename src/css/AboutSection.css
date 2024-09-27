@@ -1,0 +1,99 @@
+/* General Styling */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text color */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    flex-wrap: wrap;
+}
+
+.about-content-wrapper {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 600px;
+}
+
+.about-heading {
+    color: #ffce09; /* Yellow color for heading */
+    font-size:3rem;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 2rem;
+}
+
+.about-rate {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Button Styling */
+.learn-more-btn {
+    background-color: #FFCC00; /* Yellow background */
+    color: #000; /* Black text */
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.learn-more-btn:hover {
+    background-color: #f38c05; 
+    color: #fffefe;
+    font-weight: bold;
+}
+
+/* Image Section */
+.about-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.about-image {
+    max-height: 350px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content-wrapper {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .about-image-wrapper {
+        justify-content: center;
+    }
+
+    .about-image {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-heading {
+        font-size: 2rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+}

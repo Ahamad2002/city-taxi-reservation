@@ -1,0 +1,117 @@
+.business-section {
+    background-color: #000;  /* Black background for contrast */
+    color: #fff;  /* White text for visibility */
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow: hidden;  /* Hide anything that goes outside the bounds */
+  }
+  
+  .business-images {
+    flex: 1;
+    padding-right: 20px;  /* Spacing between image and text */
+    transform: translateX(-100%);
+    animation: slideIn 0.8s forwards;  /* Animation for sliding in */
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+  }
+  
+  .business-images img {
+    width: 100%;
+    max-width: 100%;  /* Ensure it does not overflow */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);  /* More pronounced shadow for depth */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .business-images img:hover {
+    transform: scale(1.05);  /* Slight zoom on hover */
+  }
+  
+  .business-content {
+    flex: 1;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);  /* Semi-transparent white background for text content */
+    border-left: 5px solid #ffcc00;  /* Stylish left border */
+    transform: translateX(100%);
+    animation: slideInRight 0.8s forwards;  /* Animation for sliding in from the right */
+    animation-delay: 0.8s;
+  }
+  
+  @keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+  }
+  
+  .content-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header-highlight {
+    width: 50px;
+    height: 5px;
+    background-color: #ffcc00;  /* Yellow highlight for a pop of color */
+    margin-right: 10px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .info-btn {
+    background-color: #ffcc00;  /* Vibrant yellow for action button */
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.3rem;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .info-btn:hover {
+    background-color: #e6b800;  /* Darker yellow on hover */
+    box-shadow: 0 0 15px #e6b800;  /* Glowing effect on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .business-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .business-images {
+      width: 100%;
+      padding-right: 0;  /* Remove padding on mobile */
+      margin-bottom: 20px;
+    }
+  
+    .business-content {
+      width: 100%;
+      border-left: none;
+      padding: 20px;
+      background: transparent;  /* Adjust background for mobile */
+    }
+  
+    .info-btn {
+      width: auto;  /* Adjust button width on smaller screens */
+    }
+  }
+  
